@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*
+    Portfolio Project
+    Author: Connor J Webdale
+    Date: 10.17.18
+
+    Filename: styles.css
+*/
+
+/*HTML and Body Styles*/
+html {
+    background-color: rgb(172, 211, 230);
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+header h1 {
+    padding: 0vw 1vw;
+}
+
+/*Navigation Styles*/
+nav>ul li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 14.285%;
+    background-color: rgb(150, 146, 146);
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+    line-height: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+header#name {
+    clear: left;
+}
