@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/*
+    Portfolio Project
+    Author: Connor J Webdale
+    Date: 10.17.18
+
+    Filename: layout.css
+*/
+
+/*Nav Styles*/
+nav>ul li {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 14.285%;
+    background-color: rgb(150, 146, 146);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*Header and Body styles*/
+header#name {
+    clear: left;
+}
