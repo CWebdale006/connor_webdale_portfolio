@@ -8,6 +8,13 @@
     Filename: layout.css
 */
 
+/*HTML and Body Styles*/
+body {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+}
+
 /*Nav Styles*/
 nav>ul li {
     display: block;
@@ -19,9 +26,4 @@ nav>ul li {
 
 ul {
     list-style-type: none;
-}
-
-/*Header and Body styles*/
-header#name {
-    clear: left;
 }
