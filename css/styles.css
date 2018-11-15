@@ -17,6 +17,17 @@ body {
     background-color: rgb(233, 233, 233);
 }
 
+hr {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+}
+
+h1 {
+    text-align: center;
+}
+
 header h1 {
     padding: 0vw 1vw;
 }
@@ -92,4 +103,5 @@ p#jud,
 p#rea,
 p#pro {
     background-size: 100% 100%;
+    border-radius: 15px;
 }
