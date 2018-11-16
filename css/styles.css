@@ -37,29 +37,28 @@ h2 {
     font-family: 'Oswald', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
 article ul {
     list-style-type: none;
 }
 
 img {
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 article#skills_grid {
-    color: rgb(30, 255, 0);
+    color: rgb(10, 10, 10);
 }
 
-article#skills_grid p {
+article#skills_grid img {
     min-height: 132px;
+    max-height: 285.595px;
+}
+
+p[id^="SK"] img {
+    border-radius: 15px;
+    opacity: .65;
 }
 
 /*Navigation Styles*/
@@ -76,32 +75,67 @@ nav a {
 }
 
 /*Background Image Styles*/
-/*Changed the background of paragraphs elements to a picture that matches the topic of the paragraph. */
-p#com {
-    background-image: url("https://images.unsplash.com/photo-1540835296355-c04f7a063cbb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=487ca22d4eefa13e9fcb110c224cfa46&auto=format&fit=crop&w=1650&q=80");
+
+/*Grid Styles*/
+
+/*Grid Styles 
+Skills/Knowledge
+*/
+article#skills_grid {
+    display: grid;
+    grid-template-rows: 40vh 40vh;
+    grid-template-columns: repeat(12, 1fr);
 }
 
-p#cri {
-    background-image: url("https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f75361bb535d798b9936d0b3f53e9cd3&auto=format&fit=crop&w=800&q=80");
+article#skills_grid p {
+    padding: 0;
+    margin: 0;
 }
 
-p#jud {
-    background-image: url("https://images.unsplash.com/photo-1520846468899-a56651fec36d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4930cfd314d8bf3dfb2442b5bd2dca4a&auto=format&fit=crop&w=1650&q=80");
+p#SKcom {
+    grid-row: 1/1;
+    grid-column: 1/5;
 }
 
-p#rea {
-    background-image: url("https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c4b5fcc53abd6158286dc86a9be4bee&auto=format&fit=crop&w=1650&q=80");
+p#SKcri {
+    grid-row: 1/1;
+    grid-column: 5/9;
 }
 
-p#pro {
-    background-image: url("https://images.unsplash.com/photo-1527427337751-fdca2f128ce5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7f0965bc37ef09044780baa8af91e2b3&auto=format&fit=crop&w=800&q=60");
+p#SKjud {
+    grid-row: 1/1;
+    grid-column: 9/13;
 }
 
-p#com,
-p#cri,
-p#jud,
-p#rea,
-p#pro {
-    background-size: 100% 100%;
-    border-radius: 15px;
+p#SKrea {
+    grid-row: 2/2;
+    grid-column: 2/6;
+}
+
+p#SKpro {
+    grid-row: 2/2;
+    grid-column: 8/12;
+}
+
+/*Grid Styles
+Experience div styles
+*/
+
+
+
+
+
+/*Z-index*/
+article#skills_grid p {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+article#skills_grid img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
 }
