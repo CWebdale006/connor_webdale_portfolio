@@ -53,20 +53,37 @@ article#skills_grid {
 
 article#skills_grid img {
     min-height: 132px;
-    max-height: 285.595px;
+    max-height: 263.595px;
 }
 
-/* 
-
-makes education page look bad
-
-p {
-    text-indent: 1vw;
-} */
-
-p[id^="SK"] img {
+/*Figure and Section Styles in Skills*/
+figure img {
     border-radius: 15px;
-    opacity: .65;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+figure figcaption img {
+    border-radius: 15px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+p#something {
+    display: none;
+
+}
+
+figure p {
+    position: relative;
+    top: -150px;
+    left: 10px;
+    z-index: 10;
 }
 
 /*Navigation Styles*/
@@ -84,18 +101,4 @@ nav a {
 
 /*Background Image Styles*/
 
-
-/*Z-index*/
-article#skills_grid p {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-}
-
-article#skills_grid img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-}
+/*Z-Index Styles*/
