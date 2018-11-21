@@ -57,8 +57,9 @@ article#skills_grid img {
 }
 
 /*Figure and Section Styles in Skills*/
-section img {
+section {
     border-radius: 15px;
+    position: relative;
 }
 
 section h2,
@@ -66,21 +67,43 @@ section p {
     padding: 0;
     margin: 0;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+section#one {
+    background-image: url(https://images.unsplash.com/photo-1540835296355-c04f7a063cbb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=487ca22d4eefa13e9fcb110c224cfa46&auto=format&fit=crop&w=1650&q=80);
+    background-size: 100%;
+}
+
+section#two {
+    background-image: url(https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f75361bb535d798b9936d0b3f53e9cd3&auto=format&fit=crop&w=800&q=80);
+    background-size: 100%;
+}
+
+section#three {
+    background-image: url(https://images.unsplash.com/photo-1520846468899-a56651fec36d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4930cfd314d8bf3dfb2442b5bd2dca4a&auto=format&fit=crop&w=1650&q=80);
+    background-size: 100%;
+}
+
+section#four {
+    background-image: url(https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c4b5fcc53abd6158286dc86a9be4bee&auto=format&fit=crop&w=1650&q=80);
+    background-size: 100%;
+}
+
+section#five {
+    background-image: url(https://images.unsplash.com/photo-1527427337751-fdca2f128ce5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7f0965bc37ef09044780baa8af91e2b3&auto=format&fit=crop&w=800&q=60);
+    background-size: 100%;
 }
 
 /*Padding and Visibility of Skills*/
 section h2 {
     z-index: 4;
+    padding-left: auto;
+    padding-right: auto;
 }
-
-section p {
-    z-index: 3;
-}
-
-
-
-
-
 
 /* figure p {
     position: relative;
