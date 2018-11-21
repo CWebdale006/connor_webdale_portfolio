@@ -57,34 +57,37 @@ article#skills_grid img {
 }
 
 /*Figure and Section Styles in Skills*/
-figure img {
+section img {
     border-radius: 15px;
 }
 
-figure {
+section h2,
+section p {
     padding: 0;
     margin: 0;
-}
-
-figure figcaption img {
-    border-radius: 15px;
-}
-
-figcaption {
     text-align: center;
 }
 
-p#something {
-    display: none;
-
+/*Padding and Visibility of Skills*/
+section h2 {
+    z-index: 4;
 }
 
-figure p {
+section p {
+    z-index: 3;
+}
+
+
+
+
+
+
+/* figure p {
     position: relative;
     top: -150px;
     left: 10px;
     z-index: 10;
-}
+} */
 
 /*Navigation Styles*/
 ul {
