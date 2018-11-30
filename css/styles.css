@@ -24,6 +24,10 @@ hr {
     height: 2px;
 }
 
+ul a {
+    text-decoration: none;
+}
+
 h1 {
     text-align: center;
 }
@@ -112,11 +116,29 @@ section h2 {
     z-index: 10;
 } */
 
+/*Contact Styles*/
+ul#address li:nth-of-type(1) {
+    list-style-image: url('../img/test_list.jpeg');
+}
+
+ul#address li:nth-of-type(2) {
+    list-style-image: url('../img/phone.jpg');
+}
+
+ul#address li:nth-of-type(3) {
+    list-style-image: url();
+}
+
+ul#address li:nth-of-type(4) {
+    list-style-image: url();
+}
+
 /*Navigation Styles*/
 ul {
     padding-left: 0;
     margin: 0;
     line-height: 2em;
+    text-decoration: none;
 }
 
 nav a {
