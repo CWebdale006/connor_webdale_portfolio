@@ -39,16 +39,33 @@ header h1 {
 h1,
 h2 {
     font-family: 'Oswald', sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+main div.row div.col-1-2 h2 {
+    text-align: center;
 }
 
 article ul {
     list-style-type: none;
 }
 
+p {
+    text-indent: 1vw;
+    padding: 10px;
+    padding-top: 0;
+}
+
 img {
     width: 100%;
     padding: 0;
     margin: 0;
+}
+
+img#experience {
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
 article#skills_grid {
@@ -109,6 +126,13 @@ section h2 {
     padding-right: auto;
 }
 
+article#skills_grid section p {
+    visibility: hidden;
+}
+
+
+
+
 /* figure p {
     position: relative;
     top: -150px;
@@ -117,6 +141,18 @@ section h2 {
 } */
 
 /*Contact Styles*/
+ul#address {
+    width: 20%;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+ul#address li {
+    padding-bottom: .5vw;
+}
+
 ul#address li:nth-of-type(1) {
     list-style-image: url('../img/test_list.jpeg');
 }
@@ -126,7 +162,7 @@ ul#address li:nth-of-type(2) {
 }
 
 ul#address li:nth-of-type(3) {
-    list-style-image: url();
+    list-style-image: url('../img/mobile_phone.jpeg');
 }
 
 ul#address li:nth-of-type(4) {
