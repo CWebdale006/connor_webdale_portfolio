@@ -8,6 +8,8 @@
     Filename: styles.css
 */
 
+
+
 /*HTML and Body Styles*/
 html {
     background-color: rgb(172, 211, 230);
@@ -15,6 +17,8 @@ html {
 
 body {
     background-color: rgb(233, 233, 233);
+    margin: 0px auto;
+    box-shadow: rgb(51, 51, 51) 10px 10px 25px, rgb(51, 51, 51) -10px 10px 25px;
 }
 
 hr {
@@ -83,6 +87,7 @@ section {
     position: relative;
 }
 
+
 section h2,
 section p {
     padding: 0;
@@ -94,36 +99,48 @@ section p {
 
 }
 
+section h2[id^="h"],
+section p[id^="p"] {
+    transform: translateY(-60px);
+    text-align: center;
+    width: 100%;
+}
+
+
+/*Fix the image size when background shrinks. */
 section#one {
     background-image: url(https://images.unsplash.com/photo-1540835296355-c04f7a063cbb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=487ca22d4eefa13e9fcb110c224cfa46&auto=format&fit=crop&w=1650&q=80);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 section#two {
     background-image: url(https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f75361bb535d798b9936d0b3f53e9cd3&auto=format&fit=crop&w=800&q=80);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 section#three {
     background-image: url(https://images.unsplash.com/photo-1520846468899-a56651fec36d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4930cfd314d8bf3dfb2442b5bd2dca4a&auto=format&fit=crop&w=1650&q=80);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 section#four {
     background-image: url(https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c4b5fcc53abd6158286dc86a9be4bee&auto=format&fit=crop&w=1650&q=80);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 section#five {
     background-image: url(https://images.unsplash.com/photo-1527427337751-fdca2f128ce5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7f0965bc37ef09044780baa8af91e2b3&auto=format&fit=crop&w=800&q=60);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /*Padding and Visibility of Skills*/
 section h2 {
     z-index: 4;
-    padding-left: auto;
-    padding-right: auto;
 }
 
 article#skills_grid section p {
@@ -142,7 +159,7 @@ article#skills_grid section p {
 
 /*Contact Styles*/
 ul#address {
-    width: 20%;
+    width: 25%;
     padding-left: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -153,20 +170,15 @@ ul#address li {
     padding-bottom: .5vw;
 }
 
-ul#address li:nth-of-type(1) {
-    list-style-image: url('../img/test_list.jpeg');
+i {
+    font-size: 2vw;
+    color: black;
+    padding: .5vw;
 }
 
-ul#address li:nth-of-type(2) {
-    list-style-image: url('../img/phone.jpg');
-}
-
-ul#address li:nth-of-type(3) {
-    list-style-image: url('../img/mobile_phone.jpeg');
-}
-
-ul#address li:nth-of-type(4) {
-    list-style-image: url();
+i#micah {
+    font-size: 350px;
+    transform: skew(-30deg);
 }
 
 /*Navigation Styles*/
